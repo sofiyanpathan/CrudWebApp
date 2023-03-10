@@ -20,7 +20,7 @@ const EmpCreate = () => {
 
       fetch("https://crud-web-app-pq9w.vercel.app/employee",{
         method:"POST",
-        headers:{"content-type":"application/json"},
+        headers:{"content-type":"application/json;charset=utf-8"},
         body:JSON.stringify(empdata)
       }).then((res)=>{
         alert('Saved successfully.')

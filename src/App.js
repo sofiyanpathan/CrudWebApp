@@ -16,7 +16,7 @@ import Laptop from './components/laptop/component';
 import TabletMobile from './components/tablet-mobile/component';
 
 
-const api="http://localhost:8000/employee";
+const api="https://localhost:8000/employee";
 
 function App() {
   const isMobileDevice = useMediaQuery({
