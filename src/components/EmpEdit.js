@@ -35,7 +35,7 @@ const EmpEdit = () => {
       const empdata={id,name,email,phone,active};
       
 
-      fetch("http://crud-web-app-pq9w.vercel.app/employee/"+empid,{
+      fetch("https://crud-web-app-pq9w.vercel.app/employee/"+empid,{
         method:"PUT",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)

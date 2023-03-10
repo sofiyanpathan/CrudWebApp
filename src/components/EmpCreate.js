@@ -18,7 +18,7 @@ const EmpCreate = () => {
       const empdata={name,email,phone,active};
       
 
-      fetch("http://crud-web-app-pq9w.vercel.app/employee",{
+      fetch("https://crud-web-app-pq9w.vercel.app/employee",{
         method:"POST",
         headers:{"content-type":"application/json"},
         body:JSON.stringify(empdata)
