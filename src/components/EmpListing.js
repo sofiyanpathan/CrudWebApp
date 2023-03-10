@@ -13,7 +13,7 @@ const EmpListing = () => {
     }
     const Removefunction = (id) => {
         if (window.confirm('Do you want to remove?')) {
-            fetch("https://crud-web-app-pq9w.vercel.app/employee/" + id, {
+            fetch("https://crud-web-app-pq9w.vercel.app/employee" + id, {
                 method: "DELETE"
             }).then((res) => {
                 alert('Removed successfully.')
@@ -28,7 +28,7 @@ const EmpListing = () => {
 
 
     useEffect(() => {
-        fetch("https://crud-web-app-pq9w.vercel.app/employee/").then((res) => {
+        fetch("https://crud-web-app-pq9w.vercel.app/employee").then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
