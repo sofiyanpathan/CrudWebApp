@@ -28,7 +28,7 @@ const EmpListing = () => {
 
 
     useEffect(() => {
-        fetch("https://crud-web-app-pq9w.vercel.app/employee").then((res) => {
+        fetch("https://crud-web-app-pq9w.vercel.app/employee/").then((res) => {
             return res.json();
         }).then((resp) => {
             empdatachange(resp);
